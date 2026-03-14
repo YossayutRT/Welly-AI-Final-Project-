@@ -1,0 +1,9 @@
+source_doc,category,metric,min_value,max_value,unit,target_group
+DGA.pdf,Protein,protein_intake,1.2,1.6,g/kg/day,general
+DGA.pdf,Dairy,dairy_servings,3.0,3.0,servings/day,2000_kcal_pattern
+DGA.pdf,Vegetables,vegetable_servings,3.0,3.0,servings/day,2000_kcal_pattern
+DGA.pdf,Fruits,fruit_servings,2.0,2.0,servings/day,2000_kcal_pattern
+DGA.pdf,Whole Grains,whole_grain_servings,2.0,4.0,servings/day,general
+DGA.pdf,Saturated Fat,saturated_fat_limit,,10.0,percent_total_calories/day,general
+DGA.pdf,Added Sugar,added_sugar_limit_per_meal,,10.0,g/meal,general
+DGA.pdf,Sodium,sodium_limit,,2300.0,mg/day,age_14_plus

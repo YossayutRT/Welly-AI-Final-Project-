@@ -1,0 +1,10 @@
+source_doc,section,nutrient,unit
+media.pdf,core_label,Energy,kcal
+media.pdf,core_label,Total Fat,g
+media.pdf,core_label,Saturated Fat,g
+media.pdf,core_label,Cholesterol,mg
+media.pdf,core_label,Protein,g
+media.pdf,core_label,Total Carbohydrate,g
+media.pdf,core_label,Dietary Fiber,g
+media.pdf,core_label,Sugar,g
+media.pdf,core_label,Sodium,mg

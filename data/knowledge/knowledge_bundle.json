@@ -1,0 +1,293 @@
+{
+  "standard_df": [
+    {
+      "source_doc": "media.pdf",
+      "category": "daily_reference",
+      "metric": "Energy",
+      "recommended_value": 2000,
+      "unit": "kcal/day",
+      "note": "Thai RDI reference base"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "daily_reference",
+      "metric": "Total Fat",
+      "recommended_value": 65,
+      "unit": "g/day",
+      "note": "Thai RDI reference"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "daily_reference",
+      "metric": "Saturated Fat",
+      "recommended_value": 20,
+      "unit": "g/day",
+      "note": "Thai RDI reference"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "daily_reference",
+      "metric": "Cholesterol",
+      "recommended_value": 300,
+      "unit": "mg/day",
+      "note": "Thai RDI reference"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "daily_reference",
+      "metric": "Total Carbohydrate",
+      "recommended_value": 300,
+      "unit": "g/day",
+      "note": "Thai RDI reference"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "daily_reference",
+      "metric": "Dietary Fiber",
+      "recommended_value": 25,
+      "unit": "g/day",
+      "note": "Thai RDI reference"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "daily_reference",
+      "metric": "Sodium",
+      "recommended_value": 2000,
+      "unit": "mg/day",
+      "note": "legacy value in source document"
+    }
+  ],
+  "label_required_nutrients_df": [
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Energy",
+      "unit": "kcal"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Total Fat",
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Saturated Fat",
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Cholesterol",
+      "unit": "mg"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Protein",
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Total Carbohydrate",
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Dietary Fiber",
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Sugar",
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "section": "core_label",
+      "nutrient": "Sodium",
+      "unit": "mg"
+    }
+  ],
+  "claim_rules_df": [
+    {
+      "source_doc": "media.pdf",
+      "rule_name": "healthy_claim",
+      "condition_type": "max",
+      "nutrient": "Sodium",
+      "value": 360,
+      "unit": "mg_per_serving_reference"
+    },
+    {
+      "source_doc": "media.pdf",
+      "rule_name": "healthy_claim",
+      "condition_type": "max",
+      "nutrient": "Cholesterol",
+      "value": 60,
+      "unit": "mg_per_serving_reference"
+    },
+    {
+      "source_doc": "media.pdf",
+      "rule_name": "healthy_claim",
+      "condition_type": "min_percent_rdi",
+      "nutrient": "Protein/Fiber/Vitamin/Calcium/Iron",
+      "value": 10,
+      "unit": "%Thai_RDI"
+    }
+  ],
+  "serving_size_reference_df": [
+    {
+      "source_doc": "media.pdf",
+      "category": "Dairy",
+      "item": "Ready-to-drink milk",
+      "reference_serving": 200,
+      "unit": "ml"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "Beverage",
+      "item": "Ready-to-drink beverage",
+      "reference_serving": 200,
+      "unit": "ml"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "Snack",
+      "item": "Chips / popcorn / crispy snacks",
+      "reference_serving": 30,
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "Bakery",
+      "item": "Bread",
+      "reference_serving": 50,
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "Bakery",
+      "item": "Cookie",
+      "reference_serving": 30,
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "Misc",
+      "item": "Sugar",
+      "reference_serving": 4,
+      "unit": "g"
+    },
+    {
+      "source_doc": "media.pdf",
+      "category": "Misc",
+      "item": "Salt",
+      "reference_serving": 1,
+      "unit": "g"
+    }
+  ],
+  "dga_standard_df": [
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Protein",
+      "metric": "protein_intake",
+      "min_value": 1.2,
+      "max_value": 1.6,
+      "unit": "g/kg/day",
+      "target_group": "general"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Dairy",
+      "metric": "dairy_servings",
+      "min_value": 3.0,
+      "max_value": 3.0,
+      "unit": "servings/day",
+      "target_group": "2000_kcal_pattern"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Vegetables",
+      "metric": "vegetable_servings",
+      "min_value": 3.0,
+      "max_value": 3.0,
+      "unit": "servings/day",
+      "target_group": "2000_kcal_pattern"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Fruits",
+      "metric": "fruit_servings",
+      "min_value": 2.0,
+      "max_value": 2.0,
+      "unit": "servings/day",
+      "target_group": "2000_kcal_pattern"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Whole Grains",
+      "metric": "whole_grain_servings",
+      "min_value": 2.0,
+      "max_value": 4.0,
+      "unit": "servings/day",
+      "target_group": "general"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Saturated Fat",
+      "metric": "saturated_fat_limit",
+      "min_value": null,
+      "max_value": 10.0,
+      "unit": "percent_total_calories/day",
+      "target_group": "general"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Added Sugar",
+      "metric": "added_sugar_limit_per_meal",
+      "min_value": null,
+      "max_value": 10.0,
+      "unit": "g/meal",
+      "target_group": "general"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "category": "Sodium",
+      "metric": "sodium_limit",
+      "min_value": null,
+      "max_value": 2300.0,
+      "unit": "mg/day",
+      "target_group": "age_14_plus"
+    }
+  ],
+  "dga_rules_df": [
+    {
+      "source_doc": "DGA.pdf",
+      "rule_name": "limit_added_sugar_per_meal",
+      "condition": "added_sugar <= 10",
+      "unit": "g/meal"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "rule_name": "limit_sodium_age_14_plus",
+      "condition": "sodium < 2300",
+      "unit": "mg/day"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "rule_name": "limit_saturated_fat",
+      "condition": "saturated_fat_pct <= 10",
+      "unit": "% total calories/day"
+    },
+    {
+      "source_doc": "DGA.pdf",
+      "rule_name": "protein_target_general",
+      "condition": "1.2 <= protein_g_per_kg <= 1.6",
+      "unit": "g/kg/day"
+    }
+  ]
+}

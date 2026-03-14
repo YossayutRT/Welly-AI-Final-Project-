@@ -1,0 +1,4 @@
+source_doc,rule_name,condition_type,nutrient,value,unit
+media.pdf,healthy_claim,max,Sodium,360,mg_per_serving_reference
+media.pdf,healthy_claim,max,Cholesterol,60,mg_per_serving_reference
+media.pdf,healthy_claim,min_percent_rdi,Protein/Fiber/Vitamin/Calcium/Iron,10,%Thai_RDI

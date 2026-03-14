@@ -1,0 +1,5 @@
+source_doc,rule_name,condition,unit
+DGA.pdf,limit_added_sugar_per_meal,added_sugar <= 10,g/meal
+DGA.pdf,limit_sodium_age_14_plus,sodium < 2300,mg/day
+DGA.pdf,limit_saturated_fat,saturated_fat_pct <= 10,% total calories/day
+DGA.pdf,protein_target_general,1.2 <= protein_g_per_kg <= 1.6,g/kg/day

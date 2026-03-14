@@ -1,0 +1,8 @@
+source_doc,category,metric,recommended_value,unit,note
+media.pdf,daily_reference,Energy,2000,kcal/day,Thai RDI reference base
+media.pdf,daily_reference,Total Fat,65,g/day,Thai RDI reference
+media.pdf,daily_reference,Saturated Fat,20,g/day,Thai RDI reference
+media.pdf,daily_reference,Cholesterol,300,mg/day,Thai RDI reference
+media.pdf,daily_reference,Total Carbohydrate,300,g/day,Thai RDI reference
+media.pdf,daily_reference,Dietary Fiber,25,g/day,Thai RDI reference
+media.pdf,daily_reference,Sodium,2000,mg/day,legacy value in source document
