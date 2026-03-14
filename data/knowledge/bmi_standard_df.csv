@@ -1,0 +1,11 @@
+source_doc,category,metric,min_value,max_value,unit,target_group,label,note
+document-20210831192536.pdf,BMI,bmi_formula,,,kg/m^2,general,BMI = weight_kg / (height_m ** 2),ใช้สูตรน้ำหนัก(กก.) / ส่วนสูง(เมตร)^2
+document-20210831192536.pdf,BMI,bmi_category,-inf,18.49,kg/m^2,asian_adults,Underweight,น้ำหนักต่ำกว่าเกณฑ์
+document-20210831192536.pdf,BMI,bmi_category,18.5,22.99,kg/m^2,asian_adults,Normal,น้ำหนักปกติ
+document-20210831192536.pdf,BMI,bmi_category,23.0,24.99,kg/m^2,asian_adults,Overweight,น้ำหนักเกิน
+document-20210831192536.pdf,BMI,bmi_category,25.0,29.99,kg/m^2,asian_adults,Obese Level 1,อ้วนระดับ 1
+document-20210831192536.pdf,BMI,bmi_category,30.0,inf,kg/m^2,asian_adults,Obese Level 2,อ้วนระดับ 2
+document-20210831192536.pdf,Waist Circumference,waist_risk_threshold,,90.0,cm,male,Normal,ผู้ชายควรมีเส้นรอบเอวไม่เกิน 90 ซม.
+document-20210831192536.pdf,Waist Circumference,waist_risk_threshold,90.01,inf,cm,male,High Risk,ผู้ชายเสี่ยงเมื่อเส้นรอบเอวเกิน 90 ซม.
+document-20210831192536.pdf,Waist Circumference,waist_risk_threshold,,80.0,cm,female,Normal,ผู้หญิงควรมีเส้นรอบเอวไม่เกิน 80 ซม.
+document-20210831192536.pdf,Waist Circumference,waist_risk_threshold,80.01,inf,cm,female,High Risk,ผู้หญิงเสี่ยงเมื่อเส้นรอบเอวเกิน 80 ซม.

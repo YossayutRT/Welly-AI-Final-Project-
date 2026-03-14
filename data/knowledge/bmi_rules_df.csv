@@ -1,0 +1,4 @@
+source_doc,rule_name,condition,unit,note
+document-20210831192536.pdf,bmi_formula,BMI = weight_kg / (height_m ** 2),kg/m^2,สูตรคำนวณ BMI
+document-20210831192536.pdf,waist_risk_male,waist_cm > 90,cm,ผู้ชายเสี่ยงเมื่อเส้นรอบเอวมากกว่า 90 ซม.
+document-20210831192536.pdf,waist_risk_female,waist_cm > 80,cm,ผู้หญิงเสี่ยงเมื่อเส้นรอบเอวมากกว่า 80 ซม.
