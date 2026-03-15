@@ -1,0 +1,11 @@
+food_name,recommend_score,risk_level,calories,protein,fat,sugar,sodium,cholesterol
+navy beans canned,0.9417505494505495,Low,296,19.7,1.1,0.7,1.2,0.0
+white beans canned,0.9370967486263737,Low,299,19.0,0.8,0.8,0.079,0.0
+adzuki beans cooked,0.9319126826923078,Low,294,17.3,0.2,0.0,0.079,0.0
+whole wheat macaroni dry,0.9166103791208792,Low,365,15.4,1.5,0.0,0.028,0.0
+instant coffee powder,0.8949973585164837,Low,353,12.2,0.5,0.0,0.051,0.0
+white beans cooked,0.8938457623626375,Low,249,17.4,0.6,0.6,0.045,0.0
+dill weed dried,0.8937271978021979,Low,253,20.0,4.4,0.0,0.2,0.0
+chickpeas canned,0.8903629120879122,Low,352,17.8,7.0,0.0,0.6,0.0
+triticale flour,0.8851645494505496,Low,439,17.1,2.4,0.0,0.096,0.0
+cranberry beans cooked,0.8845835164835165,Low,241,16.5,0.8,0.0,0.4,0.0
