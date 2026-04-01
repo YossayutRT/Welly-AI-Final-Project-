@@ -1,0 +1,1 @@
+"""Welly FastAPI backend package."""

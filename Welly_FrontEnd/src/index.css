@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Sora:wght@500;600;700&display=swap');
+
+:root {
+  font-family: 'Noto Sans Thai', 'Sora', 'Plus Jakarta Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+body[data-theme='light'] {
+  --bg-main: radial-gradient(circle at 10% 0%, #ffe6f2 0%, #f4f7ff 28%, #ecfbff 60%, #ffffff 100%);
+  --shell-bg: rgba(255, 255, 255, 0.7);
+  --shell-border: rgba(255, 255, 255, 0.6);
+  --shell-shadow: 0 30px 90px rgba(30, 52, 72, 0.18);
+  --line: rgba(255, 255, 255, 0.65);
+  --line-strong: rgba(255, 255, 255, 0.85);
+
+  --text-main: #1d2a36;
+  --text-muted: #5f6f7f;
+  --text-dim: #7b8a99;
+  --accent-strong: #5ee2b6;
+
+  --btn-bg: rgba(255, 255, 255, 0.75);
+  --btn-text: #1b2f3f;
+
+  --chip-bg: rgba(255, 255, 255, 0.65);
+  --chip-bg-hover: rgba(255, 255, 255, 0.8);
+  --chip-border: rgba(255, 255, 255, 0.8);
+  --chip-border-hover: rgba(94, 226, 182, 0.7);
+  --chip-text: #2b3b49;
+
+  --menu-active-bg: rgba(255, 255, 255, 0.8);
+  --menu-active-border: rgba(255, 255, 255, 0.9);
+
+  --stage-bg: rgba(255, 255, 255, 0.6);
+  --starter-bg: rgba(255, 255, 255, 0.55);
+  --toolbar-btn-bg: rgba(255, 255, 255, 0.8);
+  --composer-bg: rgba(255, 255, 255, 0.7);
+  --task-bg: rgba(255, 255, 255, 0.65);
+  --panel-bg: rgba(255, 255, 255, 0.6);
+  --sidebar-bg: rgba(255, 255, 255, 0.55);
+  --logo-bg: rgba(94, 226, 182, 0.95);
+  --logo-border: rgba(255, 255, 255, 0.85);
+
+  --ai-bg: rgba(255, 255, 255, 0.75);
+  --ai-border: rgba(255, 255, 255, 0.85);
+  --user-bg: #5ee2b6;
+  --user-border: rgba(10, 70, 48, 0.2);
+  --user-text: #053021;
+
+  --input-bg: rgba(255, 255, 255, 0.75);
+  --input-border: rgba(255, 255, 255, 0.85);
+  --focus: rgba(94, 226, 182, 0.35);
+
+  --send-bg: #5ee2b6;
+  --send-text: #053021;
+
+  --orb-a: rgba(255, 190, 222, 0.5);
+  --orb-b: rgba(178, 226, 255, 0.55);
+}
+
+body[data-theme='dark'] {
+  --bg-main: radial-gradient(circle at 22% 0%, #202833 0%, #171d26 30%, #10151d 68%, #0d1219 100%);
+  --shell-bg: #10161f;
+  --shell-border: rgba(166, 187, 208, 0.16);
+  --shell-shadow: 0 30px 100px rgba(3, 5, 9, 0.68);
+  --line: rgba(120, 143, 167, 0.16);
+  --line-strong: rgba(120, 143, 167, 0.3);
+
+  --text-main: #edf4ff;
+  --text-muted: #90a2bb;
+  --text-dim: #7488a2;
+  --accent-strong: #7df0b2;
+
+  --btn-bg: #151f2b;
+  --btn-text: #c8d9ee;
+
+  --chip-bg: rgba(22, 32, 44, 0.88);
+  --chip-bg-hover: rgba(28, 40, 55, 0.95);
+  --chip-border: rgba(120, 143, 167, 0.28);
+  --chip-border-hover: rgba(154, 182, 212, 0.5);
+  --chip-text: #b5c8df;
+
+  --menu-active-bg: rgba(25, 35, 48, 0.85);
+  --menu-active-border: rgba(123, 155, 189, 0.34);
+
+  --stage-bg: #0d141d;
+  --starter-bg: #121b25;
+  --toolbar-btn-bg: #151f2b;
+  --composer-bg: #0f1721;
+  --task-bg: #111a24;
+  --panel-bg: #0d141d;
+  --sidebar-bg: #0d141d;
+  --logo-bg: #1d9f63;
+  --logo-border: #4be395;
+
+  --ai-bg: #131d2a;
+  --ai-border: rgba(120, 143, 167, 0.34);
+  --user-bg: #1b9e64;
+  --user-border: #42d28d;
+  --user-text: #052515;
+
+  --input-bg: transparent;
+  --input-border: rgba(120, 143, 167, 0.3);
+  --focus: rgba(125, 240, 178, 0.25);
+
+  --send-bg: #2ed17f;
+  --send-text: #052113;
+
+  --orb-a: rgba(76, 119, 165, 0.24);
+  --orb-b: rgba(61, 101, 146, 0.2);
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+.page-fade {
+  animation: page-fade 0.35s ease;
+}
+
+.page-fade-exit {
+  animation: page-fade-out 0.18s ease forwards;
+}
+
+@keyframes page-fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes page-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.orb-float {
+  animation: orb-float 7s ease-in-out infinite;
+}
+
+.orb-float-delayed {
+  animation: orb-float 8.5s ease-in-out infinite reverse;
+}
+
+@keyframes orb-float {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -54%) scale(1.02);
+  }
+}

@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pandas
+rapidfuzz
+python-Levenshtein
+protobuf
+python-dotenv
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-groq
+langchain-text-splitters
+sentence-transformers
+faiss-cpu
+torch
