@@ -42,7 +42,7 @@ const menuIcons = {
   ),
 }
 
-function HistoryPage({ history, onBackChat, onBackHome }) {
+function HistoryPage({ history, onBackChat, onBackHome, onOpenSignup }) {
   useEffect(() => {
     document.body.dataset.theme = 'light'
   }, [])
@@ -97,6 +97,7 @@ function HistoryPage({ history, onBackChat, onBackHome }) {
               ) : null}
               <button
                 type="button"
+                onClick={onOpenSignup}
                 className="rounded-2xl border border-emerald-200/80 bg-emerald-200/80 px-4 py-2 text-sm font-semibold text-emerald-950 shadow-[0_10px_24px_rgba(52,211,153,0.35)]"
               >
                 Connect

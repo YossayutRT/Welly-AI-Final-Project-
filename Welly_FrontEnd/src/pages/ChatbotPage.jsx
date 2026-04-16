@@ -51,7 +51,7 @@ const quickPrompts = [
   { label: 'High Protein', prompt: 'ช่วยหาเมนูอาหารเย็นที่ทำง่ายและมีโปรตีนสูง' },
 ]
 
-function ChatbotPage({ onBackHome, onOpenHistory, onNewQuestion }) {
+function ChatbotPage({ onBackHome, onOpenHistory, onOpenSignup, onNewQuestion }) {
   const nextIdRef = useRef(2)
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -108,9 +108,11 @@ function ChatbotPage({ onBackHome, onOpenHistory, onNewQuestion }) {
     }
 
     checkBackend()
+    const intervalId = window.setInterval(checkBackend, 5000)
 
     return () => {
       ignore = true
+      window.clearInterval(intervalId)
     }
   }, [])
 
@@ -279,6 +281,7 @@ function ChatbotPage({ onBackHome, onOpenHistory, onNewQuestion }) {
               ) : null}
               <button
                 type="button"
+                onClick={onOpenSignup}
                 className="rounded-2xl border border-emerald-200/80 bg-emerald-200/80 px-4 py-2 text-sm font-semibold text-emerald-950 shadow-[0_10px_24px_rgba(52,211,153,0.35)]"
               >
                 Connect

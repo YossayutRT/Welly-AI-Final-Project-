@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-function HomePage({ onStartChat }) {
+function HomePage({ onStartChat, onOpenSignup }) {
   useEffect(() => {
     document.body.dataset.theme = 'light'
   }, [])
@@ -24,9 +24,10 @@ function HomePage({ onStartChat }) {
             </div>
             <button
               type="button"
+              onClick={onOpenSignup}
               className="rounded-2xl border border-white/70 bg-white/60 px-4 py-2 text-sm font-medium text-slate-700 backdrop-blur-xl shadow-[0_8px_20px_rgba(31,54,74,0.12)]"
             >
-              Sign in
+              สมัครใช้งาน
             </button>
           </header>
 
@@ -54,9 +55,10 @@ function HomePage({ onStartChat }) {
                 </button>
                 <button
                   type="button"
+                  onClick={onOpenSignup}
                   className="rounded-2xl border border-white/70 bg-white/70 px-5 py-3 text-sm font-medium text-slate-700"
                 >
-                  ดูตัวอย่างเมนูสุขภาพ
+                  สร้างโปรไฟล์สุขภาพ
                 </button>
               </div>
 

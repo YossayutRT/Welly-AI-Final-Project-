@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import ChatbotPage from './pages/ChatbotPage'
 import HistoryPage from './pages/HistoryPage'
 import HomePage from './pages/HomePage'
+import SignUpPage from './pages/SignUpPage'
 
 function App() {
   const [page, setPage] = useState('home')
@@ -33,6 +34,7 @@ function App() {
         <ChatbotPage
           onBackHome={() => goTo('home')}
           onOpenHistory={() => goTo('history')}
+          onOpenSignup={() => goTo('signup')}
           onNewQuestion={(entry) =>
             setHistory((prev) => [
               {
@@ -55,14 +57,23 @@ function App() {
           history={history}
           onBackChat={() => goTo('chat')}
           onBackHome={() => goTo('home')}
+          onOpenSignup={() => goTo('signup')}
         />
+      </div>
+    )
+  }
+
+  if (page === 'signup') {
+    return (
+      <div className={`page-fade ${isExiting ? 'page-fade-exit' : ''}`} key="signup">
+        <SignUpPage onBackHome={() => goTo('home')} onStartChat={() => goTo('chat')} />
       </div>
     )
   }
 
   return (
     <div className={`page-fade ${isExiting ? 'page-fade-exit' : ''}`} key="home">
-      <HomePage onStartChat={() => goTo('chat')} />
+      <HomePage onStartChat={() => goTo('chat')} onOpenSignup={() => goTo('signup')} />
     </div>
   )
 }
